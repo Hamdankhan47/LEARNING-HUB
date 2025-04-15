@@ -1,0 +1,127 @@
+<!-- Table container -->
+    <!-- The <table> tag defines a table structure to organize data in rows and columns. -->
+        <table border="1" cellpadding="8" cellspacing="2" width="80%">
+            <caption>Student Marks</caption>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>Math</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Sara</td>
+                <td>English</td>
+                <td>88</td>
+            </tr>
+            </tbody>
+        </table>
+        
+            <!-- "border"        Specifies the width of the table border (use CSS in modern HTML)
+                "cellpadding"   Space between cell content and its border (padding inside cells)
+                "cellspacing"   Space between table cells (use CSS border-spacing now)
+                "width"         Width of the entire table (px, %, etc.) -->
+    
+<!-- "----------------------------------------------------------------------------------------------"-->               
+
+
+    <!-- Table row -->
+        <tr>
+            <td>Example</td>
+            <td>Row</td>
+        </tr>
+        
+            <!-- Global attributes like id, class, style, etc., are supported -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Table cells and headers with spanning -->
+        <tr>
+            <th scope="col">Student</th>
+            <th scope="col">Marks</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Ayesha</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>87</td>
+        </tr>
+        
+            <!-- "colspan"  Makes the cell span across multiple columns
+                "rowspan"  Makes the cell span across multiple rows
+                "headers"  Refers to id of associated <th> elements (for accessibility)
+                "scope"    Specifies header scope: "col", "row", "colgroup", "rowgroup" -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->            
+
+
+    <!-- Table sections -->
+        <table>
+            <thead>
+            <tr><th>Heading</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>Body content</td></tr>
+            </tbody>
+            <tfoot>
+            <tr><td>Footer note</td></tr>
+            </tfoot>
+        </table>
+        
+            <!-- These tags help structure and group table rows for styling and accessibility
+                → <thead>: Header rows
+                → <tbody>: Main content rows
+                → <tfoot>: Summary/footer rows
+                All support global attributes -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->            
+
+
+    <!-- Table caption -->
+        <table>
+            <caption>Employee Data</caption>
+            <!-- Table content here -->
+        </table>
+        
+            <!-- Provides a title or description for the table
+                Appears above or below the table depending on browser/CSS -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->            
+
+
+    <!-- Column formatting -->
+        <table>
+            <colgroup>
+            <col span="1" style="background-color: #f2f2f2;" width="150">
+            <col span="2" width="100">
+            </colgroup>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            </tr>
+            <tr>
+            <td>Ali</td>
+            <td>22</td>
+            <td>Lahore</td>
+            </tr>
+        </table>
+        
+            <!-- <colgroup>  Groups one or more <col> elements for styling
+                <col>      Defines style and width for specific columns
+                "span"     Applies the same style to multiple columns
+                "width"    Specifies width of the column (can also use CSS style) -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->            
+
+
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Elements with Explanations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      line-height: 1.6;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    hr {
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Elements with Live Examples and Explanations</h1>
+
+  <!-- Modal Dialog -->
+  <section>
+    <h2>&lt;dialog&gt; - Modal Dialog</h2>
+    <dialog open>
+      <p>This is a modal dialog box.</p>
+      <button onclick="this.parentElement.close()">Close</button>
+    </dialog>
+    <p><strong>Explanation:</strong> The <code>&lt;dialog&gt;</code> element represents a popup dialog box that can be used for modal interactions or custom alerts. Adding the <code>open</code> attribute makes it visible by default. Use JavaScript methods like <code>show()</code>, <code>showModal()</code>, or <code>close()</code> to control visibility dynamically.</p>
+    <ul>
+      <li><strong>Global Attributes:</strong> Supported (e.g., <code>id</code>, <code>class</code>, <code>style</code>)</li>
+      <li><strong>Accessibility:</strong> Consider using <code>aria-label</code> for better screen reader support</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <!-- Expandable Content -->
+  <section>
+    <h2>&lt;details&gt; - Expandable Content</h2>
+    <details open>
+      <summary>Click to learn more</summary>
+      <p>This is hidden content revealed on click.</p>
+    </details>
+    <p><strong>Explanation:</strong> The <code>&lt;details&gt;</code> element creates a disclosure widget from which the user can obtain additional information. The <code>open</code> attribute shows the content by default. When used without JavaScript, it's ideal for FAQs or progressive content.</p>
+    <ul>
+      <li>Use CSS to style open/closed states if needed</li>
+      <li>Improves UX by reducing initial content clutter</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <!-- Summary Heading -->
+  <section>
+    <h2>&lt;summary&gt; - Summary for Expandable Sections</h2>
+    <details>
+      <summary>Frequently Asked Questions</summary>
+      <p>Here are some common questions and answers.</p>
+    </details>
+    <p><strong>Explanation:</strong> The <code>&lt;summary&gt;</code> element defines the clickable heading for the <code>&lt;details&gt;</code> section. It’s required inside <code>&lt;details&gt;</code> and toggles the visibility of the remaining content.</p>
+    <ul>
+      <li>Can include inline HTML like <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, etc.</li>
+      <li>Text inside should clearly describe the expandable section</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <!-- Canvas -->
+  <section>
+    <h2>&lt;canvas&gt; - Drawing Graphics via JavaScript</h2>
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #ccc;"></canvas>
+    <p><strong>Explanation:</strong> The <code>&lt;canvas&gt;</code> element provides a drawing area in the browser that you control using JavaScript. It doesn’t render anything on its own without JS code.</p>
+    <ul>
+      <li><strong>Common Attributes:</strong> <code>width</code>, <code>height</code>, <code>id</code></li>
+      <li><strong>Usage:</strong> Ideal for custom visualizations, games, graphs, animations</li>
+    </ul>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "lightgreen";
+      ctx.fillRect(50, 50, 200, 50);
+      ctx.font = "16px Arial";
+      ctx.fillStyle = "black";
+      ctx.fillText("This is drawn on canvas", 60, 80);
+    </script>
+  </section>
+
+  <hr />
+
+  <!-- SVG -->
+  <section>
+    <h2>&lt;svg&gt; - Scalable Vector Graphics</h2>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" fill="skyblue" stroke="black" stroke-width="2" />
+    </svg>
+    <p><strong>Explanation:</strong> The <code>&lt;svg&gt;</code> element is used for drawing 2D vector graphics. Unlike <code>&lt;canvas&gt;</code>, SVG elements are part of the DOM and can be styled with CSS or animated with SMIL or JavaScript.</p>
+    <ul>
+      <li><code>&lt;circle&gt;</code> draws a circle with center (<code>cx</code>, <code>cy</code>) and radius <code>r</code></li>
+      <li>Other shapes: <code>&lt;rect&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;polygon&gt;</code>, etc.</li>
+      <li>Useful for icons, graphs, and responsive visuals</li>
+    </ul>
+  </section>
+
+</body>
+</html>

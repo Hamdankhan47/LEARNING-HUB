@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML List Types Tutorial for Beginners">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML List Types</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>HTML List Types</h1>
+    <p>This page demonstrates the different types of HTML lists and explains how to use their attributes effectively.</p>
+  </header>
+
+  <main>
+    <!-- Unordered List -->
+    <section>
+      <h2>1. Unordered List (<code>&lt;ul&gt;</code>)</h2>
+      <p>
+        An unordered list is used when the order of items doesn’t matter. Each item is wrapped inside a
+        <code>&lt;li&gt;</code> (list item) tag. By default, items are displayed with bullet points.
+      </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- Ordered List with Type, Start, and Reversed -->
+    <section>
+      <h2>2. Ordered List with Attributes</h2>
+      <p>
+        An ordered list (<code>&lt;ol&gt;</code>) is used when the order of items is important. Items are numbered by default.
+        You can customize the list using these attributes:
+      </p>
+      <ul>
+        <li><code>type</code>: Changes numbering style. Common values include:
+          <ul>
+            <li><code>1</code>: Numbers (default)</li>
+            <li><code>A</code>: Uppercase letters</li>
+            <li><code>a</code>: Lowercase letters</li>
+            <li><code>I</code>: Uppercase Roman numerals</li>
+            <li><code>i</code>: Lowercase Roman numerals</li>
+          </ul>
+        </li>
+        <li><code>start</code>: Sets the starting value.</li>
+        <li><code>reversed</code>: Displays the list in reverse order.</li>
+      </ul>
+      <p>Example:</p>
+      <ol type="A" start="3" reversed>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+    </section>
+
+    <!-- Ordered List with Custom Values -->
+    <section>
+      <h2>3. Ordered List with Custom Value</h2>
+      <p>
+        You can manually override the numbering of individual list items using the <code>value</code> attribute inside
+        <code>&lt;li&gt;</code>. This is useful when continuing lists or creating custom steps.
+      </p>
+      <ol>
+        <li value="10">Tenth item</li>
+        <li>Next item</li>
+      </ol>
+    </section>
+
+    <!-- Description List -->
+    <section>
+      <h2>4. Description List (<code>&lt;dl&gt;</code>)</h2>
+      <p>
+        A description list is used to define terms and their corresponding definitions. It uses:
+      </p>
+      <ul>
+        <li><code>&lt;dl&gt;</code>: The container (Description List)</li>
+        <li><code>&lt;dt&gt;</code>: Term name (Definition Term)</li>
+        <li><code>&lt;dd&gt;</code>: Description or explanation (Definition Description)</li>
+      </ul>
+      <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Used to style HTML elements.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Learning Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

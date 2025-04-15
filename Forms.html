@@ -1,0 +1,156 @@
+<!-- Form container -->
+<form action="/submit-form" method="post" target="_blank" enctype="multipart/form-data" autocomplete="on">
+    <!-- Form fields go here -->
+  </form>
+  
+      <!-- "action"       URL to send form data to when submitted
+           "method"       HTTP method: "get" or "post"
+           "target"       Where to display the response: "_self", "_blank", etc.
+           "enctype"      Encoding type for form data (use "multipart/form-data" for file uploads)
+           "autocomplete" Enable/disable browser autocomplete: "on" or "off" -->
+
+           
+
+
+
+<!-- Input field examples -->
+<input type="text" name="username" value="John" placeholder="Enter username" required />
+<input type="number" min="1" max="10" step="1" />
+<input type="email" readonly disabled pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+
+    <!-- "type"         Input type (text, email, number, password, file, etc.)
+         "name"         Key used when submitting form
+         "value"        Default value of the input
+         "placeholder"  Text shown inside input before typing
+         "required"     Field must be filled out before submission
+         "readonly"     Field cannot be edited
+         "disabled"     Field is inactive
+         "min", "max"   Minimum/maximum value (for number, date, etc.)
+         "step"         Allowed interval between numbers
+         "pattern"      Regex for validation (e.g., email format) -->
+
+
+
+
+
+
+<!-- Label linked to input -->
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="user_email" />
+
+    <!-- "for"   ID of the input element this label is associated with -->
+
+
+
+
+
+<!-- Dropdown list -->
+<select name="country" multiple required>
+    <option value="pk">Pakistan</option>
+    <option value="us">USA</option>
+  </select>
+  
+      <!-- "name"       Key for form submission
+           "multiple"   Allows multiple selections
+           "required"   Must select an option -->
+
+           
+
+
+
+
+<!-- Dropdown options -->
+<option value="india">India</option>
+<option value="uk" selected>UK</option>
+<option value="fr" disabled>France</option>
+
+    <!-- "value"     Value submitted with the form
+         "selected"  Pre-selects the option
+         "disabled"  Makes the option unselectable -->
+
+
+
+
+
+<!-- Multiline input -->
+<textarea name="message" rows="5" cols="30" placeholder="Write your message here..." required></textarea>
+
+    <!-- "name"         Key for form submission
+         "rows"         Number of visible text lines
+         "cols"         Width of the textarea
+         "placeholder"  Hint text inside the field
+         "required"     Field must be filled -->
+
+
+
+
+
+<!-- Button types -->
+<button type="submit" name="save" value="1">Submit</button>
+<button type="reset" disabled>Reset</button>
+
+    <!-- "type"     Button type: "submit", "reset", or "button"
+         "name"     Name used when form is submitted
+         "value"    Value submitted with the form
+         "disabled" Makes the button unclickable -->
+
+
+
+
+
+<!-- Group of form elements -->
+<fieldset name="user-details" disabled>
+    <legend>User Info</legend>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" />
+  </fieldset>
+  
+      <!-- "disabled"   Disables all elements inside the fieldset
+           "name"       Optional name (used in JavaScript) -->
+
+           
+
+
+
+<!-- Legend inside fieldset -->
+<fieldset>
+    <legend>Payment Info</legend>
+    <!-- Payment fields -->
+  </fieldset>
+  
+      <!-- Provides a caption/title for a <fieldset>
+           Supports global attributes like class, id, etc. -->
+
+           
+
+
+
+<!-- Input with datalist -->
+<input list="browsers" name="browser" />
+<datalist id="browsers">
+  <option value="Chrome" />
+  <option value="Firefox" />
+  <option value="Safari" />
+</datalist>
+
+    <!-- Defines a list of pre-defined options for input (autocomplete suggestions) -->
+
+
+
+
+
+
+
+<!-- Display result -->
+<form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+    <input type="number" name="a" /> +
+    <input type="number" name="b" /> =
+    <output name="result" for="a b"></output>
+  </form>
+  
+      <!-- "for"   IDs/names of input elements the result is based on
+           "name"  Name of the output field for form data -->
+
+           
+
+

@@ -1,0 +1,138 @@
+<!-- we learn about the links and media elements-->
+    <!-- ANCHER tag-->
+        <!--Used to create hyperlinks — linking to webpages, files, emails, sections on the page, etc.--> 
+        <a href="https://google.com">Visit google</a>
+                <!--Attributes are 
+                            href (Required)
+                            target
+                            rel
+                            download
+                            
+                            -->
+                <!--  "target"   Specifies where to open the link.-->
+                <a href="https://openai.com" target="_blank">OpenAI</a>
+                    <!--    _self	    (default) Open in same tab
+                            _blank	    Open in new tab/window
+                            _parent	    Open in parent frame
+                            _top	    Open in full body (break out of frame) -->
+                
+                
+                    
+                    
+                <!--    "rel"     Defines the relationship between the current page and the linked page. Commonly used with target="_blank" for security.-->
+                <a href="https://google.com" target="_blank" rel="noopener noreferrer">google</a>
+                    <!--    noopener	                Prevent access to window.opener
+                            noreferrer	                Don’t send referrer info
+                            nofollow	                Search engines shouldn’t follow the link
+                            author, license, etc.   	Define specific relationships-->
+                
+
+                    
+                <!--    "download"    Tells the browser to download the linked file instead of opening it.-->
+                <a href="resume.pdf" download>Download Resume</a>
+                <!-- you can also remame the download file-->
+                <a href="resume.pdf" download="My_CV.pdf">Download CV</a>
+
+
+
+                <!--    "title"  Adds a tooltip that appears when the user hovers over the link. -->
+                <a href="about.html" title="Learn more about us">About</a>
+ 
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Inline image tag -->
+        <!-- The <img> tag is used to embed images into a web page. It’s a self-closing tag and supports various attributes to control how the image is displayed and handled.-->
+        <img src="images/cat.jpg" alt="A cute orange cat sitting on a window" width="300" height="200" loading="lazy"/>
+
+            <!-- "src"	    Source of the image file (URL or path to file)
+                 "alt"	    Alternative text shown if the image doesn't load or for screen readers (accessibility)
+                 "width"	Width of the image in pixels (can also use %, em, etc.)
+                 "height"	Height of the image in pixels (scales the image; should maintain aspect ratio)
+                 "loading"	Controls how the image loads:
+                             → lazy: load when in viewport	
+                             → eager: load immediately	
+                             → auto: browser decides	-->
+
+<!-- "----------------------------------------------------------------------------------------------"-->            
+
+
+    <!-- Audio playback tag -->
+        <!-- The <audio> tag is used to embed sound content like music, voice clips, or sound effects. It can include playback controls and supports multiple attributes for behavior customization. -->
+        <audio src="audio/song.mp3" controls autoplay loop muted>Your browser does not support the audio element.</audio>
+            <!--    "src"       Source of the audio file (URL or path to file, e.g., .mp3, .ogg)
+                    "controls"  Displays built-in play/pause/volume controls for the user
+                    "autoplay"  Starts playing the audio automatically when the page loads (muted usually required)
+                    "loop"      Repeats the audio track continuously once it ends
+                    "muted"     Starts the audio in a muted state (important for autoplay to work in most browsers) -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Source tag for media files -->
+        <!-- The <source> tag is used within <audio> or <video> to define multiple media file formats, enhancing browser compatibility. -->
+        <video controls>
+        <source src="videos/movie.mp4" type="video/mp4">
+        <source src="videos/movie.webm" type="video/webm">
+        Your browser does not support the video tag.
+        </video>
+
+            <!--    "src"   Source path of the media file
+                    "type"  MIME type (e.g., video/mp4, audio/ogg) to help the browser pick the correct format -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Inline frame tag -->
+        <!-- The <iframe> tag is used to embed another HTML page or external content (like videos, maps, etc.) into the current page. -->
+        <iframe src="https://www.example.com" width="600" height="400" title="Example Website" allowfullscreen></iframe>
+
+            <!--    "src"             URL of the page or content to embed
+                "width"           Width of the iframe (in px or %)
+                 "height"          Height of the iframe (in px or %)
+                "title"           Describes the iframe content (important for accessibility)
+                "allowfullscreen" Allows the embedded content (like videos) to go full-screen -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Embed tag -->
+        <!-- The <embed> tag is used to embed external content like PDFs, Flash, or multimedia into a webpage. It is a self-closing tag. -->
+        <embed src="files/document.pdf" type="application/pdf" width="500" height="600" />
+
+            <!--    "src"     URL or path of the content to embed
+                    "type"    MIME type of the embedded file (e.g., application/pdf, video/mp4)
+                    "width"   Width of the embedded area
+                    "height"  Height of the embedded area -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Object embed tag -->
+        <!-- The <object> tag is used to embed multimedia, documents, or other interactive content (similar to <embed> but with more control). -->
+        <object data="files/sample.pdf" type="application/pdf" width="600" height="500">
+            Your browser does not support embedded objects.
+        </object>
+
+            <!--    "data"    Path to the file to embed
+                    "type"    MIME type of the embedded content
+                    "width"   Width of the object display area
+                    "height"  Height of the object display area -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->
+
+
+    <!-- Track tag for captions/subtitles -->
+        <!-- The <track> tag is used inside <video> or <audio> to specify subtitles, captions, or other timed text tracks. -->
+        <video controls>
+            <source src="videos/movie.mp4" type="video/mp4">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+        </video>
+
+             <!--   "src"       Path to the subtitle or caption file (usually .vtt)
+                    "kind"      Type of track: subtitles, captions, descriptions, chapters, metadata
+                    "label"     Label shown to users (e.g., "English", "French")
+                    "srclang"   Language of the track (e.g., "en" for English, "fr" for French)
+                    "default"   Makes this track selected by default when the media loads -->
+
+<!-- "----------------------------------------------------------------------------------------------"-->

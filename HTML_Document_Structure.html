@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<!-- Declares the document type and HTML version  -->
+    <html lang="en" dir="ltr" >
+        <!-- 
+            this the ROOT ELEMENT of the html page
+            this wraps all the contents on the entire page
+        -->
+        <!--
+        the  "lang" is an attribute that helps the screen reader detect the language
+        and assists search engines with language-based indexing 
+        -->
+        <!-- 
+            "dir" is also an attibute of the root element
+                Defines the text direction.
+                    ltr   (left to right) — default
+                    rtl   (right to left) — for languages like Arabic or Hebrew
+        -->
+        <!--
+        xmlns (in XHTML)
+        Specifies the XML namespace. Required for XHTML documents.
+        -->
+        <!--
+        Other attributes are also used but are rare
+        like  "class" , "id" , "sytle" , "title" .
+        -->
+
+        <head>
+            <title>My Web Page</title> <!-- Required -->
+            <meta charset="UTF-8">
+            <meta name="description" content="A beginner-friendly webpage">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--
+            <link rel="stylesheet" href="styles.css">
+            <link rel="icon" href="favicon.ico">
+
+            <style>
+                body { font-family: Arial; }
+            </style>
+
+            <script src="script.js"></script>
+            -->
+
+
+                
+                    <!--    this contains the meta data
+                            this head element acts as a container for all the stuff you want to include on the html page that is not the content you are showing to the pages viewer.
+                            this includes the keywords , page description , style characterset diclaration -->
+                
+
+                    
+                    <!--    "<title>"
+                                Sets the title of the page (shown in the browser tab)
+                            "<meta>"
+                                Provides metadata like character encoding, page description, viewport settings, etc
+                            "<link>"
+                                Links external resources like CSS files or icons
+                            "<style>"
+                                adds external css styles
+                            "<scripts>"
+                                Links to or contains JavaScript (can also go at the end of <body>).
+                                "<base>"
+                                Sets the base URL for relative URLs on the page
+                        "<nonscript>"
+                            Provides content for users with JavaScript disabled
+                    -->
+        </head>
+        <body>
+            <p>
+                This contains all the content you want to show on your web page
+            </p>
+        </body>
+    </html>
